@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": false,
+        "module": "ES6",
+        "target": "es6",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "paths": {
+            "@*": [
+                "*"
+            ],
+            "@socket": [
+                "utils/socket.tsx"
+            ],
+            "@user": [
+                "utils/contexts/userContext.tsx"
+            ],
+            "@serverconfig": [
+                "utils/contexts/configContext.tsx" 
+            ]
+        }
+    },
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "./server"
+    ]
+}
